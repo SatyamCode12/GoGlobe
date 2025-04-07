@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GoGlobe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body id="body">
+    <div class="headMainPage">
+        <div class="logoMain" onclick="hide()">GoGlobe</div>
+        <button class="signUp" onclick="showSignUp()">Sign-Up</button>
+        <button class="logIn" onclick="showLogin()">Login</button>
+    </div>
+
+        <div class="intro" id="intro1">
+            Explore,Plan &<br>Experience the World with GoGlobe!
+        </div>
+
+        <div class="signUpForm" id="signUpForm">
+            <form action="index.html" method="post">
+            <div class="signUpFormHead">Sign-Up</div>
+            <div class="cancel" onclick="hide()">X</div>
+            <hr style="height: 3px;background-color: rgba(0, 0, 0, 0.277); margin-top: 6px;">
+            <div class="emailRegisterSignIn">
+                <label for="emailRegister">Email:</label><br>
+                <input type="text" id="emailRegisterInput" name="emailRegister">
+            </div>
+            <div class="userNameSignIn">
+                <label for="userName">Username:</label><br>
+                <input type="text" id="userNameInput" name="userName">
+            </div>
+            <div class="passWordSignIn">
+                <label for="passWord">Password:</label><br>
+                <input type="password" id="passWordInput" name="passWord">
+            </div><br>
+            <button class="signUpButton" type="submit">Sign-Up</button>
+        </form>
+        </div>
+
+        <div class="image"></div>
+        
+        <div class="logInForm" id="logInForm">
+            <div class="logInFormHead">Login</div>
+            <div class="cancel" onclick="hide()">X</div>
+            <hr style="height: 3px;background-color: rgba(0, 0, 0, 0.277); margin-top: 6px;">
+            <div class="userNameLogin">
+                <label for="userName">Username:</label>
+                <input type="text" id="userNameInputLogin" name="userName">
+            </div>
+            <div class="passWordLogin">
+                <label for="passWord">Password:</label>
+                <input type="password" id="passWordInputLogin" name="passWord">
+            </div>
+            <button class="loginButton">Login</button>
+        </div>
+
+    <div class="featureIntro" id="menu">
+        <div id="bucketList" onmouseover="highlightBucketList()" onmouseleave="unhighlightBucketList()" onclick="redBucket()">
+            <div class="bucketListHeading">
+                Bucketlist
+            </div>
+        </div>
+        <div id="virtualTour" onmouseover="highlightVirtualTour()" onmouseleave="unhighlightVirtualTour()" onclick="redVirtual()">
+            <div class="virtualTourHeading">
+                Virtual Tour
+            </div>
+        </div>
+        <div id="bookTicket" onmouseover="highlightBookTicket()" onmouseleave="unhighlightBookTicket()" onclick="redTOUR()" >
+            <div class="bookTicketHeading">
+                Book Ticket
+            </div>
+        </div>   
+    </div>
+    <script src="javascript.js"></script>
+</body>
+</html>
