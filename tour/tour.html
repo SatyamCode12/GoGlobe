@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Travel Booking</title>
+    <link rel="stylesheet" href="tourcss.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav>
+            <ul>
+                <li style="font-size: 40px;">GoGlobe</li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-content">
+            <h1>Book Your Next Adventure</h1>
+            <p>Find great deals on flights, hotels, and more!</p>
+            <form id="searchForm">
+                <input type="text" placeholder="Where are you going?" id="destination" required>
+                <input type="date" id="startDate" placeholder="Start Date" required>
+                <button type="submit">Search</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Categories Section -->
+    <section class="categories">
+        <div class="category-card">
+            <h3>Flights</h3>
+            <p>Book domestic & international flights.</p>
+        </div>
+        <div class="category-card">
+            <h3>Hotels</h3>
+            <p>Find the best hotels at unbeatable prices.</p>
+        </div>
+        <div class="category-card">
+            <h3>Holidays</h3>
+            <p>Plan your next vacation with customized holiday packages.</p>
+        </div>
+    </section>
+
+    <script src="tourjs.js">
+    </script>
+    
+
+</body>
+</html>
